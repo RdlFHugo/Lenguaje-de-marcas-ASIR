@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ejercicios de HTML. Formulario 8.</h1>
+    <br><br>
+
+    <h3>Importante: Para ver mejor el funcinamiento de este ejercicio. Ejecutarlo en Chrome.</h3>
+    <h2>Formulario de Registro.</h2>
+
+    <form name="formulario de registro" method="GET" action="registro.php">
+        <table>
+            <tr>
+                <td><label for="nombre">Nombre</label></td>
+                <td><input type="text" name="nombre" id="nombre" maxlength="50"></td>
+            </tr>
+            <tr>
+                <td><label for="correo">Correo Electrónico</label></td>
+                <td><input type="email" name="correo" id="correo" maxlength="50"></td>
+            </tr>
+            <tr>
+                <td><label for="url">URL</label></td>
+                <td><input placeholder="Escribe tu URL." type="url" name="url" id="url"></td>
+            </tr>
+            <tr>
+                <td><label for="fecha">Fecha</label></td>
+                <td><input type="date" name="fecha" id="fecha"></td>
+            </tr>
+            <tr>
+                <td><label for="hora">Hora</label></td>
+                <td><input type="time" name="hora" id="hora"></td>
+            </tr>
+            <tr>
+                <td><label for="mes">Mes</label></td>
+                <td><input type="month" name="mes" id="mes"></td>
+            </tr>
+            <tr>
+                <td><label for="semana">Semana</label></td>
+                <td><input type="week" name="semana" id="semana"></td>
+            </tr>
+            <tr>
+                <td><label for="numero">Número favorito</label></td>
+                <td><input type="number" name="numero" id="numero" max="10" min="1"></td>
+            </tr>
+            <tr>
+                <td><label for="telefono">Teléfono</label></td>
+                <td><input type="tel" name="telefono" id="telefono" pattern="[0-9]{9}"></td>
+            </tr>
+            <tr>
+                <td><label for="busqueda">Termino de búsqueda</label></td>
+                <td><input type="search" name="busqueda" id="busqueda"></td>
+            </tr>
+            <tr>
+                <td><label for="color">Color Favorito</label></td>
+                <td><input type="color" name="color" id="color"></td>
+            </tr>
+            <tr>
+                <td><input type="submit"></td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>

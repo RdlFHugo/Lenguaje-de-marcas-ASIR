@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Ejercicios de HTML. Formularios. Ejercicio 7</h1>
+
+    <h3>Formulario de registro.</h3>
+
+    <form name="Formulario 1" method="get" action="registro.php">
+        <table>
+            <tr>
+                <td><label for="nombre">Nombre</label></td>
+                <td><input type="text" name="nombre" id="nombre" maxlength="50"></td>
+            </tr>
+            <tr>
+                <td><label for="apellidos">Apellidos</label></td>
+                <td><input type="text" name="apellidos" id="apellidos" maxlength="50"></td>
+            </tr>
+            <tr>
+                <td><label for="sexo">Sexo</label></td>
+                <td>
+                    <input type="radio" name="sexo" value="Hombre" id="sexo_hombre">Hombre
+                    <input type="radio" name="sexo" value="Mujer" id="sexo_mujer">Mujer
+                </td>
+            </tr>
+            <tr>
+                <td><label for="correo">Correo electrónico</label></td>
+                <td><input type="email" name="correo" id="correo" maxlength="50"></td>
+            </tr>
+            <tr>
+                <td><label for="poblacion">Población</label></td>
+                <td>
+                    <select name="poblacion">
+                    <option></option>
+                    <option>Madrid</option>
+                    <option>Alicante</option>
+                    <option>Valencia</option>
+                    <option>Sevilla</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><label for="descripcion">Descripción</label><br>
+                <textarea cols="50" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input value="Enviar" type="submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
